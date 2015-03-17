@@ -66,7 +66,7 @@ static NSString * const kLogTag = @"Adjust";
     va_end(parameters);
 
     NSArray *lines = [string componentsSeparatedByString:@"\n"];
-    for (NSString *line in lines) {
+    for (NSString *line __attribute__((unused)) in lines) {
         NSLog(@"\t[%@]%@: %@", kLogTag, logLevel, line);
     }
 }
