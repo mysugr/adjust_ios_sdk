@@ -46,6 +46,7 @@ static NSDateFormatter *dateFormat;
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunreachable-code"
+#pragma clang diagnostic ignored "-Wtautological-compare"
 
     if (&NSURLIsExcludedFromBackupKey == nil) { // iOS 5.0.1 and lower
         u_int8_t attrValue = 1;
